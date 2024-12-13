@@ -766,3 +766,199 @@ body{
 		padding-right: 15px;
 	}
 }
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+.mt0 {
+    margin-top: 0;
+}
+.thin {
+    font-weight: 400;
+}
+
+/* Header Styles */
+header {
+    background-color: #111;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Footer Widget */
+.footer-widget {
+    background-color: #111;
+    color: #fabe12;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.product-section .product-box {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.product-section .product-box:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+}
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-section .faq {
+    margin-bottom: 10px;
+}
+
+/* Shop Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.shop-section .shop-box {
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+.shop-section .shop-box:hover {
+    transform: translateY(-5px);
+}
+
+/* History Section */
+.history-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Partner Section */
+.partner-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.partner-section .partner-logo {
+    flex: 1 1 calc(25% - 40px);
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.partner-section .partner-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-section .product-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .shop-section .shop-box {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .partner-section .partner-logo {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .product-section .product-box,
+    .partner-section .partner-logo {
+        flex: 1 1 100%;
+    }
+
+    .footer-widget {
+        font-size: 0.9em;
+    }
+}
+
+/* In your main.css or inline <style> */
+@media (max-width: 768px) {
+	#header {
+	  padding: 20px 0;
+	  background-size: cover;
+	  text-align: center;
+	}
+  
+	#header .intro {
+	  padding: 100px;
+	}
+  }
+  
+/* Make images responsive */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  /* For specific images */
+  @media (max-width: 768px) {
+	img[src="assets/images/carakerja.png"],
+	img[src="assets/images/workflow.jpg"],
+	img[src="assets/images/usecase.png"] {
+	  width: 90%; /* Adjust as needed */
+	}
+  }
+
+  /* Add to main.css or inline <style> */
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	overflow: hidden;
+  }
+  
+  .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+  /* Typography and padding adjustments */
+@media (max-width: 768px) {
+	.title-box h2.title {
+	  font-size: 20px;
+	  line-height: 1.4;
+	  padding: 0 15px;
+	}
+  
+	.boxed p {
+	  font-size: 16px;
+	  padding: 10px;
+	}
+  }
+  
